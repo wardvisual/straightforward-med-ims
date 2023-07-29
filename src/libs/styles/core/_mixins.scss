@@ -1,0 +1,158 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexStart {
+  display: flex;
+  align-items: start;
+}
+
+@mixin flexCenterBetween {
+  @include flexCenter;
+  justify-content: space-between;
+}
+@mixin flexCenterCenter {
+  @include flexCenter;
+  justify-content: center;
+}
+@mixin flexCenterEnd {
+  @include flexCenter;
+  justify-content: flex-end;
+}
+@mixin flexCenterStart {
+  @include flexCenter;
+  justify-content: flex-start;
+}
+
+// GRID
+
+@mixin gridCenter {
+  display: grid;
+  align-items: center;
+}
+
+@mixin gridStart {
+  display: grid;
+  align-items: start;
+}
+
+@mixin gridCenterBetween {
+  @include gridCenter;
+  justify-content: space-between;
+}
+
+@mixin gridCenterCenter {
+  @include gridCenter;
+  justify-content: center;
+}
+
+@mixin gridCenterEnd {
+  @include gridCenter;
+  justify-content: end;
+}
+
+@mixin gridCenterStart {
+  @include gridCenter;
+  justify-content: start;
+}
+
+// 2
+@mixin gridStartCenter {
+  @include gridStart;
+  justify-content: center;
+}
+
+@mixin gridStartBetween {
+  @include gridStart;
+  justify-content: between;
+}
+
+//  Effects
+@mixin animateLink {
+  padding: 0.5em 1em 0.5em 1em;
+  width: 100%;
+  &:hover {
+    color: var(--color-blue-400);
+    transition: color 0.5s;
+    text-decoration: underline;
+    margin-left: 0.4em;
+
+    transition: margin-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  &:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+  }
+}
+
+// utils
+@mixin overlay {
+}
+
+// card
+@mixin card {
+  section {
+    > ul {
+      @include gridStartBetween;
+      align-items: unset;
+
+      grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+      grid-gap: 1em;
+
+      > li {
+        display: grid;
+        grid-gap: 0.7em;
+
+        padding: 1.5em;
+        background-color: var(--color-dark-300);
+        border-radius: var(--radius-5);
+
+        > span {
+          @include flexCenter;
+          gap: 0.5em;
+
+          i {
+            color: var(--color-blue-400);
+          }
+        }
+
+        footer {
+          @include flexCenterBetween;
+          ul {
+            @include flexCenterStart;
+            gap: 0.7em;
+
+            li {
+              img {
+                max-width: 1.5em;
+                border-radius: unset !important;
+              }
+            }
+          }
+
+          @media screen and (max-width: 550px) {
+            margin-top: 0.5em;
+            flex-direction: column;
+            align-items: start;
+
+            > a {
+              order: 1;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 620px) {
+      > ul {
+        grid-template-columns: unset;
+        footer {
+          button {
+            margin-top: 1em;
+          }
+        }
+      }
+    }
+  }
+}

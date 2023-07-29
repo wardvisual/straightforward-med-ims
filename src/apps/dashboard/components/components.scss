@@ -1,0 +1,59 @@
+.dashboard {
+  &__modal {
+    display: grid;
+    grid-gap: 0.5em;
+  }
+}
+
+.view-cabinet-modal {
+  display: grid;
+  grid-gap: 1em;
+  text-align: center;
+
+  .drawers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    .drawer {
+      flex: 20%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+
+      background-color: var(--color-primary-400);
+
+      padding: 1em;
+
+      box-shadow: var(--box-shadow-100);
+      i {
+        font-size: 2rem;
+      }
+      p {
+        font-weight: 600;
+        font-size: 1rem;
+        min-width: max-content;
+      }
+      > * {
+        color: var(--color-light-400);
+      }
+
+      cursor: pointer;
+      &:hover {
+        opacity: 95%;
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}

@@ -1,0 +1,49 @@
+{
+  "name": "se-ims",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "educational purposes project for software engineering class",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "author": {
+    "name": "Eduardo Manlangit Jr",
+    "email": "wardvisual@gmail.com",
+    "github": "https://github.com/wardvisual"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.26.0",
+    "@zxing/library": "^0.20.0",
+    "antd": "^5.6.3",
+    "bcryptjs": "^2.4.3",
+    "quagga": "^0.12.1",
+    "react": "^18.2.0",
+    "react-devtools": "^4.27.8",
+    "react-dom": "^18.2.0",
+    "react-qr-scanner": "1.0.0-alpha.11",
+    "react-router-dom": "^6.14.1",
+    "sass": "^1.63.6",
+    "uuid": "^9.0.0",
+    "zukeeper": "^1.0.2",
+    "zustand": "^4.3.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@types/uuid": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-tsconfig-paths": "^4.2.0"
+  }
+}

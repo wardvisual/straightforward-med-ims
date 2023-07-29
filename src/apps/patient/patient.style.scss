@@ -1,0 +1,54 @@
+section.student__request {
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    width: 50em;
+
+    margin: 0 auto;
+
+    .header {
+      text-align: start;
+    }
+
+    h1 {
+      color: var(--color-primary-400);
+    }
+
+    form {
+      display: grid;
+      grid-gap: 1em;
+    }
+
+    footer {
+      display: grid;
+      gap: 0.3em;
+    }
+  }
+
+  @media screen and (max-width: 825px) {
+    .content {
+      width: 100%;
+      gap: unset;
+
+      form {
+        grid-gap: 0.5em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .content {
+      form {
+        .col {
+          gap: 0.5em;
+        }
+      }
+    }
+  }
+}

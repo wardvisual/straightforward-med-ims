@@ -1,0 +1,163 @@
+@import "/src/libs/styles/core/_mixins.scss";
+
+.txt-lg {
+  font-size: clamp(4rem + 2vw, 10vw, 2rem);
+}
+.link {
+  a {
+    font-family: var(--font-family-primary) !important;
+    color: var(--color-primary-400);
+    text-decoration: underline;
+  }
+}
+
+.notif-bell {
+  position: relative;
+
+  .badge {
+    position: absolute;
+    top: -1em;
+    right: -0.5em;
+  }
+}
+.breadcrumb {
+  > * {
+    font-size: 1.2rem;
+  }
+}
+.table {
+  th {
+    background-color: var(--color-primary-400) !important;
+    color: var(--color-light-400) !important;
+  }
+}
+.profile-badge {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 1.5em 1em 1.5em;
+
+  img {
+    width: 4.5em;
+    height: 4.5em;
+    object-fit: cover;
+    border-radius: 100em !important;
+  }
+
+  > div {
+    p {
+      color: var(--color-light-300);
+      font-size: 1.1rem;
+
+      &:last-child {
+        margin-top: -0.5em;
+        font-size: 0.9rem;
+
+        display: flex;
+        align-items: center;
+        gap: 0.2em;
+        i {
+          font-size: 1.3rem;
+          color: var(--color-light-300);
+          font-weight: normal !important;
+        }
+      }
+    }
+  }
+}
+
+div.content {
+  padding: 1em;
+}
+
+div.container {
+  width: 100%;
+  max-width: 70em;
+
+  padding: 0 1em 0 1em;
+  z-index: 2;
+
+  margin: 0 auto;
+
+  @media screen and (max-width: 1260px) {
+    .wrapper {
+      margin: 0 5em 0 5em;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .wrapper {
+      margin: 0 4em 0 4em;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    padding: unset;
+
+    .wrapper {
+      margin: 0 1.5em 0 2em;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .wrapper {
+      margin: 0 0.8em 0 0.8em;
+    }
+  }
+}
+
+.text--lead {
+  font-family: var(--font-family-secondary);
+  font-size: clamp(0.8rem, 4vw, 1rem);
+  color: var(--color-primary-400);
+}
+
+.c-pointer {
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.navlink--active {
+  color: var(--color-primary-400) !important;
+}
+
+.form-group {
+  // max-width: 35em;
+
+  label {
+    > p {
+      font-size: clamp(0.8rem, -0.2rem + 4vw, 0.9rem);
+    }
+
+    i {
+      font-size: clamp(0.8rem, -0.2rem + 4vw, 0.99rem);
+    }
+  }
+}
+
+.col {
+  @include flexCenterBetween;
+  gap: 1em;
+  // max-width: 35em;
+
+  > * {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 450px) {
+    gap: 2em;
+
+    flex-direction: column;
+    align-items: unset;
+  }
+}
+
+span.code {
+  background-color: var(--color-dark-300);
+  padding: 0.2em 0.6em 0.2em 0.6em;
+  border-radius: var(--radius-10);
+  font-size: 0.9rem;
+}

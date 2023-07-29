@@ -1,0 +1,35 @@
+:root {
+  --color-primary-100: #2b7c64;
+  --color-primary-200: #328f73;
+  --color-primary-300: #3aa686;
+  --color-primary-400: #41b995;
+  --color-primary-400--active: #33a381;
+
+  --color-light-100-hover: #edfffa;
+  --color-light-100: #c5cdca;
+  --color-light-200: #d3dad8;
+  --color-light-300: #e6eeec;
+  --color-light-400: #f4fffc;
+
+  --color-dark-100-low: #525157;
+  --color-dark-100: #2d2c34;
+  --color-dark-200: #2a2933;
+  --color-dark-300: #292834;
+  --color-dark-400: #242331;
+
+  --color-tertiary-400: #4bd75e;
+
+  --font-family-primary: "Poppins", sans-serif;
+  --font-family-secondary: "consolas", monospace;
+
+  --radius-2: 2px;
+  --radius-3: 3px;
+  --radius-5: 5px;
+  --radius-10: 10px;
+
+  --box-shadow-100: 2px 3px 56px 14px rgba(65, 185, 149, 0.16);
+  -webkit-box-shadow: 2px 3px 56px 14px rgba(65, 185, 149, 0.16);
+  -moz-box-shadow: 2px 3px 56px 14px rgba(65, 185, 149, 0.16);
+}
+
+@import "./override";

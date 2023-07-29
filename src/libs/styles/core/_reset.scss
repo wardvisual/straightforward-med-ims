@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// CSS RESET
+body,
+html {
+  font-size: 1rem;
+  font-family: var(--font-family-primary);
+  font-weight: normal;
+  font-style: normal;
+  background: var(--color-light-400);
+  color: var(--color-dark-400);
+
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary-400);
+  font-family: var(--font-family-secondary);
+
+  &:hover {
+    color: var(--color-primary-400) !important;
+  }
+}
+
+p,
+span,
+i,
+li,
+a {
+  line-height: 2;
+  font-size: clamp(0.8rem, -0.2rem + 4vw, 1rem);
+  color: var(--color-dark-400);
+}
+
+i {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+hr {
+  width: 100%;
+  opacity: 8% !important;
+  height: 0.4px;
+  border-color: var(--color-light-100) !important;
+}
+
+img {
+  border-radius: var(--radius-10) !important;
+  width: 100%;
+  height: auto;
+}
+
+span {
+  font-size: inherit;
+  color: var(--color-primary-400);
+  font-family: var(--font-family-secondary);
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  color: var(--color-dark-400);
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(1.8rem, -0.2rem + 8vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1rem, 4vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(0.9rem, 4vw, 1.5rem);
+}
+
+h5 {
+  font-size: clamp(0.8rem, 4vw, 1.2rem);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+main,
+nav,
+section {
+  height: auto;
+}
+
+main {
+  margin-top: 10em;
+
+  @media screen and (max-width: 532px) {
+    margin-top: 8em;
+  }
+}
+
+::selection {
+  background: var(--color-primary-400);
+  color: var(--color-light-400);
+}
+
+::-moz-selection {
+  background: var(--color-primary-400);
+  color: var(--color-light-400);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--color-light-400);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-light-100);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-light-100);
+  /* background-color: #7EB8FF; */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-light-200);
+  /* background-color: #6EA1FF; */
+}

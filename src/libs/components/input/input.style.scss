@@ -1,0 +1,46 @@
+input,
+textarea,
+select,
+option {
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: unset;
+  border: 1px var(--color-primary-400) solid;
+  font-family: var(--font-family-primary);
+}
+
+select option {
+  padding: 1em !important;
+
+  &:hover {
+    background-color: var(--color-primary-400) !important;
+  }
+}
+textarea {
+  resize: vertical;
+}
+
+.input-unit {
+  border-radius: var(--radius-5);
+
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+}
+
+.col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
+}
+
+.checkbox {
+  p {
+    font-family: var(--font-family-primary);
+    font-weight: normal;
+    font-size: 0.9rem;
+  }
+}
