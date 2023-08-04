@@ -32,7 +32,7 @@ The schema and data types presented here are tailored for educational purposes a
 1. Clone the repository to your local machine.
 
    ```sh
-   git clone https://github.com/your-username/csu-clinic-ims.git
+   git clone https://github.com/your-username/straightforward-med-ims.git
    ```
 
 2. Navigate to the directory
