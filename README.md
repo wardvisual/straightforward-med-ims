@@ -38,7 +38,7 @@ The schema and data types presented here are tailored for educational purposes a
 2. Navigate to the directory
 
    ```sh
-   cd straightforward-medicine-ims
+   cd straightforward-med-ims
    ```
 
 3. Install PNPM Packages
