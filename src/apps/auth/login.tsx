@@ -13,7 +13,7 @@ const Login = () => {
     if (authStore.isAuthenticated) {
       navigate("/dashboard");
     }
-  }, []);
+  }, [authStore.isAuthenticated]);
 
   return (
     <section className="auth">
